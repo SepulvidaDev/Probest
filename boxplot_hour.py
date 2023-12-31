@@ -69,4 +69,18 @@ fig, ax = plt.subplots()
 ax.boxplot(data)
 plt.show()
 
+num_bin_up = (1 + 3.322*(log(len(dados_hora_up_chrome[22]), 10)))
+num_bin_down = (1 + 3.322*(log(len(dados_hora_down_chrome[22]), 10)))
+num_bin_up2 = (1 + 3.322*(log(len(dados_hora_up_smart[21]), 10)))
+num_bin_down2 = (1 + 3.322*(log(len(dados_hora_up_smart[21]), 10)))
+
+plt.hist(dados_hora_up_chrome[22], round(num_bin_up), rwidth=0.9)
+plt.show()
+plt.hist(dados_hora_down_chrome[22], round(num_bin_down), rwidth=0.9)
+plt.show()
+plt.hist(dados_hora_up_smart[21], round(num_bin_up2), rwidth=0.9)
+plt.show()
+plt.hist(dados_hora_down_smart[21], round(num_bin_down2), rwidth=0.9)
+plt.show()
+
 
